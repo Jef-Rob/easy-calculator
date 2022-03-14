@@ -1,0 +1,108 @@
+body {
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+button {
+  border: 0.5px gainsboro solid;
+}
+
+button:hover {
+  background-color: ghostwhite;
+}
+
+.calculator {
+  border: 3px solid;
+  border-radius: 2%;
+  padding: 2rem;
+  background-color: aquamarine;
+  width: 25rem;
+}
+
+.calculator__brand {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.displayer {
+  border: 2px solid;
+  border-radius: 2%;
+  padding: 0.5rem 1rem;
+  margin-bottom: 3rem;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: end;
+  font-size: 2rem;
+}
+
+.pad {
+  height: 20rem;
+}
+
+.pad ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.pad li {
+  width: calc(100% * (1/5) - 16px);
+  padding: 10px;
+}
+
+.pad li:nth-child(5n - 4) {
+  padding: 10px 10px 10px 0;
+}
+
+.pad li:nth-child(5n) {
+  padding: 10px 0 10px 10px;
+}
+
+.pad li:nth-child(-n+5) {
+  padding-top: 0;   
+}
+
+.pad li:nth-last-child(-n+5) {
+  padding-bottom: 0;   
+}
+
+.tile {
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+}
+
+.tile--is-red {
+  background-color: #ff7130;
+  color: white;
+  border-color: #ffa87f;
+}
+
+.tile--is-red:hover {
+  background-color: #ffa87f;
+}
+
+.tile--is-blue {
+  background-color: #3c84ff;
+  color: white;
+  border-color: #7faeff;
+}
+
+.tile--is-blue:hover {
+  background-color: #7faeff;
+}
+
+.tile:hover {
+  cursor: pointer;
+}
